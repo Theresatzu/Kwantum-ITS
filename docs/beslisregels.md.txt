@@ -1,0 +1,80 @@
+#Adaptieve beslisregels
+
+	Doel
+	De adaptieve beslisregels bepalen welke leeractiviteit het systeem aanbiedt op basis 	van het actuele kennisniveau van de leerling. Hierbij wordt gebruikgemaakt van de 	beheersingsscores uit het studentmodel.
+
+	Beheersingsniveaus
+
+	Score	Niveau
+	0,80 - 1,00	Goed beheerst
+	0,60 - 0,79	Voldoende beheerst
+	0,40 - 0,59	Gedeeltelijk beheerst
+	0,00 - 0,39	Onvoldoende beheerst
+
+	Regel 1: Correct antwoord
+	Wanneer een leerling een opdracht correct beantwoordt:
+
+	De beheersingsscore stijgt.
+	De tutor biedt een moeilijkere opdracht aan.
+
+	Regel 2: Gedeeltelijk correct antwoord
+	Wanneer een leerling een deel van het concept begrijpt:
+
+	De tutor geeft een hint.
+	De tutor biedt een vergelijkbare opdracht aan.
+
+	Regel 3: Fout antwoord
+	Wanneer een leerling een fout antwoord geeft:
+
+	De tutor geeft een hint.
+	De leerling krijgt een nieuwe poging.
+
+	Regel 4: Herhaald fout antwoord
+	Wanneer een leerling meerdere keren dezelfde fout maakt:
+
+	De tutor stelt een socratische vraag.
+	De tutor probeert de leerling zelf tot inzicht te laten komen.
+
+	Regel 5: Blijvend fout antwoord
+	Wanneer de leerling het concept na meerdere pogingen nog niet begrijpt:
+
+	De tutor geeft extra uitleg.
+	Vervolgens ontvangt de leerling een nieuwe opdracht.
+
+	Regel 6: Concept beheerst
+	Wanneer de beheersingsscore groter is dan 0,80:
+
+	Het concept wordt als beheerst beschouwd.
+	De tutor selecteert een nieuw concept uit het domeinmodel.
+
+	Regel 7: Prioriteit voor zwakke concepten
+	De tutor richt zich eerst op concepten met de laagste beheersingsscore.
+	
+	Voorbeeld:
+
+	{
+	  "foton": 0.90,
+	  "interferentie": 0.75,
+	  "buiging": 0.40,
+	  "golf_deeltjedualiteit": 0.25
+	}
+	In dit voorbeeld krijgt het concept "golf-deeltjedualiteit" prioriteit.
+
+	Adaptieve leercyclus
+	Instaptoets
+	      ↓
+	Diagnose
+	      ↓
+	Studentmodel
+	      ↓
+	Opdracht
+	      ↓
+	Evaluatie
+	      ↓
+	Studentmodel bijwerken
+	      ↓
+	Tutorbeslissing
+	      ↓
+	Hint / Uitleg / Nieuwe opdracht
+      	↺
+	Deze cyclus wordt herhaald totdat alle belangrijke concepten voldoende worden 	beheerst.
