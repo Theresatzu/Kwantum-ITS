@@ -1,0 +1,16 @@
+Leerwinst
+
+	Doel
+	De leerwinst wordt bepaald door de resultaten van de instaptoets en uitstaptoets te 	vergelijken.
+
+	Voorbeeld:
+	Instaptoets: 4/10
+
+	Uitstaptoets: 8/10
+
+	Leerwinst: +4 punten
+
+	Conceptniveau
+	Foton: 0.4 → 0.9
+
+	Interferentie: 0.3 → 0.8
