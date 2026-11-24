@@ -1,4 +1,5 @@
 #Domeinmodel
+
 	Concepten
 
 		Foton
@@ -9,3 +10,13 @@
 	Relaties
 
 		Licht │ ├── Foton ├── Interferentie ├── Buiging └── Golf-deeltjedualiteit
+
+	Gebruik
+
+	Het domeinmodel vormt de basis voor:
+
+		de instaptoets
+		het studentmodel
+		de evaluatiemodule
+		de tutoragent
+	
