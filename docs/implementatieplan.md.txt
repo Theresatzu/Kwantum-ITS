@@ -1,0 +1,52 @@
+#Implementatieplan
+
+	Doel
+	Het doel van de implementatie is het ontwikkelen van een werkende AI-tutor voor 	paragraaf 15.1 van natuurkunde vwo 6.
+
+	Fase 1: Diagnose
+	In de eerste fase wordt een instaptoets afgenomen.
+
+	De tutor:
+
+	stelt 10 vragen;
+	beoordeelt de antwoorden;
+	bepaalt per concept een beheersingsscore;
+	genereert een eerste studentmodel.
+
+	Resultaat:
+
+	leerlingprofiel;
+	studentmodel;
+	overzicht van sterke en zwakke concepten.
+
+	Fase 2: Adaptieve begeleiding
+	Op basis van het studentmodel kiest de tutor het concept dat extra aandacht nodig 	heeft.
+
+	De tutor kan:
+
+	uitleg geven;
+	een hint geven;
+	een socratische vraag stellen;
+	een opdracht aanbieden.
+	Na iedere opdracht wordt het studentmodel bijgewerkt.
+
+	Fase 3: Evaluatie
+	Wanneer alle concepten voldoende worden beheerst, wordt een uitstaptoets afgenomen.
+
+	De resultaten van de uitstaptoets worden vergeleken met de resultaten van de 	instaptoets.
+
+	Fase 4: Leerwinst
+	De leerwinst wordt bepaald door:
+
+	vergelijking van de instaptoets en uitstaptoets;	
+	vergelijking van de beheersingsscores in het studentmodel;
+	analyse van veelvoorkomende misconcepties.
+
+	Gebruikte technologie
+
+	GPT-5 via Azure OpenAI
+	Microsoft Copilot Studio
+	Azure AI Search
+	OpenAI Embeddings
+	Python
+	GitHub
