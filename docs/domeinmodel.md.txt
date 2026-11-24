@@ -1,0 +1,11 @@
+#Domeinmodel
+	Concepten
+
+		Foton
+		Interferentie
+		Buiging
+		Golf-deeltjedualiteit
+
+	Relaties
+
+		Licht │ ├── Foton ├── Interferentie ├── Buiging └── Golf-deeltjedualiteit
