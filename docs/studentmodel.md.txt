@@ -1,0 +1,42 @@
+#Studentmodel
+
+	Doel
+
+	Het studentmodel bevat een dynamische representatie van de kennis van de leerling. Het 	model wordt gebruikt om bij te houden welke concepten uit paragraaf 15.1 worden 	beheerst en welke concepten extra aandacht vereisen.
+
+	Beheersingsscores
+
+	Voor ieder concept uit het domeinmodel wordt een beheersingsscore tussen 0 en 1 	bijgehouden.
+
+		0 = geen beheersing
+		1 = volledige beheersing
+
+	Concepten
+
+	Het studentmodel houdt de volgende concepten bij:
+
+		Foton
+		Interferentie
+		Buiging
+		Golf-deeltjedualiteit
+
+	Voorbeeld
+
+	{
+  	"foton": 0.9,
+  	"interferentie": 0.6,
+  	"buiging": 0.4,
+  	"golf_deeltjedualiteit": 0.2
+	}
+
+	Generatie van het studentmodel
+
+	Na het afronden van de instaptoets worden de antwoorden geanalyseerd door de 	diagnosemodule.
+
+	Voor ieder concept wordt een beheersingsscore berekend op basis van het aantal 	correcte antwoorden.
+
+	Bijwerken van het studentmodel
+
+	Na iedere opdracht wordt het studentmodel bijgewerkt. Bij correcte antwoorden stijgt 	de beheersingsscore. Bij foutieve antwoorden blijft de score gelijk of daalt deze 	licht.
+
+	Het studentmodel wordt gebruikt door de tutoragent om te bepalen welke uitleg, 	opdrachten of hints aan de leerling worden aangeboden.
